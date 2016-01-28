@@ -258,6 +258,12 @@
 		062C67DF1C58C46000B9C134 /* ZHPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67DD1C58C46000B9C134 /* ZHPickView.m */; };
 		0678095F1C5A0D1600FB147A /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678095C1C5A0D1600FB147A /* DateUtils.m */; };
 		067809631C5A0DFC00FB147A /* IPDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809621C5A0DFC00FB147A /* IPDetector.m */; };
+		0678096A1C5A176200FB147A /* DXPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809661C5A176200FB147A /* DXPopover.m */; };
+		0678096B1C5A176200FB147A /* ZJMessageTopButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809691C5A176200FB147A /* ZJMessageTopButtonsView.m */; };
+		067809751C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678096E1C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.m */; };
+		067809761C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809701C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m */; };
+		067809771C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809721C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m */; };
+		067809781C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		E3457F47661D824AF03DFC73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429E7A1871E48A4F25A2F0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -780,6 +786,18 @@
 		0678095C1C5A0D1600FB147A /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
 		067809611C5A0DFC00FB147A /* IPDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDetector.h; sourceTree = "<group>"; };
 		067809621C5A0DFC00FB147A /* IPDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDetector.m; sourceTree = "<group>"; };
+		067809651C5A176200FB147A /* DXPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPopover.h; sourceTree = "<group>"; };
+		067809661C5A176200FB147A /* DXPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXPopover.m; sourceTree = "<group>"; };
+		067809681C5A176200FB147A /* ZJMessageTopButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJMessageTopButtonsView.h; sourceTree = "<group>"; };
+		067809691C5A176200FB147A /* ZJMessageTopButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJMessageTopButtonsView.m; sourceTree = "<group>"; };
+		0678096D1C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		0678096E1C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		0678096F1C5A17D400FB147A /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		067809701C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		067809711C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		067809721C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		067809731C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8F304A3C52914685600B7B1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D429E7A1871E48A4F25A2F0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1148,6 +1166,9 @@
 		062C64B21C58900A00B9C134 /* ThirdParty(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				0678096C1C5A17D400FB147A /* FDTemplateLayoutCell */,
+				067809641C5A176200FB147A /* DXPopover */,
+				067809671C5A176200FB147A /* MessageTopView */,
 				062C67D81C58C46000B9C134 /* PAImageView */,
 				062C67DB1C58C46000B9C134 /* ZHPickView */,
 				062C67C51C589E4600B9C134 /* GVUserDefaults */,
@@ -2241,6 +2262,39 @@
 			path = "Macros(宏)";
 			sourceTree = "<group>";
 		};
+		067809641C5A176200FB147A /* DXPopover */ = {
+			isa = PBXGroup;
+			children = (
+				067809651C5A176200FB147A /* DXPopover.h */,
+				067809661C5A176200FB147A /* DXPopover.m */,
+			);
+			path = DXPopover;
+			sourceTree = "<group>";
+		};
+		067809671C5A176200FB147A /* MessageTopView */ = {
+			isa = PBXGroup;
+			children = (
+				067809681C5A176200FB147A /* ZJMessageTopButtonsView.h */,
+				067809691C5A176200FB147A /* ZJMessageTopButtonsView.m */,
+			);
+			path = MessageTopView;
+			sourceTree = "<group>";
+		};
+		0678096C1C5A17D400FB147A /* FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				0678096D1C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.h */,
+				0678096E1C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.m */,
+				0678096F1C5A17D400FB147A /* UITableView+FDKeyedHeightCache.h */,
+				067809701C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m */,
+				067809711C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.h */,
+				067809721C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m */,
+				067809731C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.h */,
+				067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = FDTemplateLayoutCell;
+			sourceTree = "<group>";
+		};
 		8C0B86839696FEFD70397E5A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2479,6 +2533,7 @@
 				062C67601C589AF400B9C134 /* UIImage+animatedGIF.m in Sources */,
 				062C67D41C58A11900B9C134 /* ZJTabBarButton.m in Sources */,
 				062C672E1C589AF400B9C134 /* NSTimer+Addition.m in Sources */,
+				067809751C5A17D400FB147A /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				062C676D1C589AF400B9C134 /* UIImage+RoundedCorner.m in Sources */,
 				062C676A1C589AF400B9C134 /* UIImage+PDF.m in Sources */,
 				062C675A1C589AF400B9C134 /* UIDevice+Hardware.m in Sources */,
@@ -2504,6 +2559,7 @@
 				062C67831C589AF400B9C134 /* UIPopoverController+iPhone.m in Sources */,
 				062C67BA1C589AF400B9C134 /* UIWebView+Blocks.m in Sources */,
 				062C67891C589AF400B9C134 /* UIScrollView+APParallaxHeader.m in Sources */,
+				067809761C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m in Sources */,
 				062C67B91C589AF400B9C134 /* UIWebView+Alert.m in Sources */,
 				062C67701C589AF400B9C134 /* UIImageView+BetterFace.m in Sources */,
 				062C66F21C589AF400B9C134 /* NSDate+CupertinoYankee.m in Sources */,
@@ -2568,11 +2624,13 @@
 				062C67871C589AF400B9C134 /* UIScreen+Frame.m in Sources */,
 				062C67431C589AF400B9C134 /* UIApplication+KeyboardFrame.m in Sources */,
 				062C67B21C589AF400B9C134 /* UIViewController+DDPopUpViewController.m in Sources */,
+				0678096A1C5A176200FB147A /* DXPopover.m in Sources */,
 				062C671C1C589AF400B9C134 /* NSString+Base64.m in Sources */,
 				062C67161C589AF400B9C134 /* NSObject+MKBlockTimer.m in Sources */,
 				062C670A1C589AF400B9C134 /* NSDecimalNumber+Extensions.m in Sources */,
 				062C679B1C589AF400B9C134 /* UITextView+Select.m in Sources */,
 				062C67531C589AF400B9C134 /* UIColor+Gradient.m in Sources */,
+				067809771C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				062C675C1C589AF400B9C134 /* UIFont+DynamicFontControl.m in Sources */,
 				062C66E51C589AF400B9C134 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				062C67671C589AF400B9C134 /* UIImage+GIF.m in Sources */,
@@ -2624,6 +2682,7 @@
 				062C678B1C589AF400B9C134 /* UIScrollView+Pages.m in Sources */,
 				062C67C81C589E4600B9C134 /* GVUserDefaults.m in Sources */,
 				062C64BF1C5892DD00B9C134 /* ZJBaseViewController.m in Sources */,
+				067809781C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				062C673A1C589AF400B9C134 /* GVUserDefaults+BBProperties.m in Sources */,
 				062C67BD1C589AF400B9C134 /* UIWebView+Load.m in Sources */,
 				062C67061C589AF400B9C134 /* NSInvocation+Bb.m in Sources */,
@@ -2644,6 +2703,7 @@
 				062C645D1C586BF100B9C134 /* main.m in Sources */,
 				062C67AA1C589AF400B9C134 /* UIView+Shake.m in Sources */,
 				062C67071C589AF400B9C134 /* NSInvocation+Block.m in Sources */,
+				0678096B1C5A176200FB147A /* ZJMessageTopButtonsView.m in Sources */,
 				062C67421C589AF400B9C134 /* UIApplication+ApplicationSize.m in Sources */,
 				062C67C21C589AF400B9C134 /* WebView+Debug.m in Sources */,
 				062C67951C589AF400B9C134 /* UITextField+Blocks.m in Sources */,
@@ -2824,7 +2884,10 @@
 			baseConfigurationReference = 0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJCommonProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.ZJCommonProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2836,7 +2899,10 @@
 			baseConfigurationReference = 8F304A3C52914685600B7B1E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJCommonProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.ZJCommonProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
