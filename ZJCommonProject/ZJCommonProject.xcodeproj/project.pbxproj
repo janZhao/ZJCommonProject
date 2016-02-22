@@ -264,6 +264,8 @@
 		067809761C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809701C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m */; };
 		067809771C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809721C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m */; };
 		067809781C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		0678097E1C5B128900FB147A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678097B1C5B128900FB147A /* ASValuePopUpView.m */; };
+		0678097F1C5B128900FB147A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678097D1C5B128900FB147A /* ASValueTrackingSlider.m */; };
 		E3457F47661D824AF03DFC73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429E7A1871E48A4F25A2F0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -798,6 +800,10 @@
 		067809721C5A17D400FB147A /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		067809731C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
 		067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		0678097A1C5B128900FB147A /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		0678097B1C5B128900FB147A /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		0678097C1C5B128900FB147A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		0678097D1C5B128900FB147A /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
 		0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8F304A3C52914685600B7B1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D429E7A1871E48A4F25A2F0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1166,6 +1172,7 @@
 		062C64B21C58900A00B9C134 /* ThirdParty(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				067809791C5B128900FB147A /* ASValueTrackingSlider */,
 				0678096C1C5A17D400FB147A /* FDTemplateLayoutCell */,
 				067809641C5A176200FB147A /* DXPopover */,
 				067809671C5A176200FB147A /* MessageTopView */,
@@ -2295,6 +2302,17 @@
 			path = FDTemplateLayoutCell;
 			sourceTree = "<group>";
 		};
+		067809791C5B128900FB147A /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				0678097A1C5B128900FB147A /* ASValuePopUpView.h */,
+				0678097B1C5B128900FB147A /* ASValuePopUpView.m */,
+				0678097C1C5B128900FB147A /* ASValueTrackingSlider.h */,
+				0678097D1C5B128900FB147A /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
 		8C0B86839696FEFD70397E5A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2605,6 +2623,7 @@
 				062C67441C589AF400B9C134 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				062C67751C589AF400B9C134 /* UILabel+AutomaticWriting.m in Sources */,
 				062C66DF1C589AF400B9C134 /* NSManagedObject+DictionaryExport.m in Sources */,
+				0678097E1C5B128900FB147A /* ASValuePopUpView.m in Sources */,
 				062C676E1C589AF400B9C134 /* UIImage+Vector.m in Sources */,
 				062C67A41C589AF400B9C134 /* UIView+Frame.m in Sources */,
 				062C67391C589AF400B9C134 /* MKMapView+ZoomLevel.m in Sources */,
@@ -2679,6 +2698,7 @@
 				062C67DF1C58C46000B9C134 /* ZHPickView.m in Sources */,
 				062C67711C589AF400B9C134 /* UIImageView+FaceAwareFill.m in Sources */,
 				062C67321C589AF400B9C134 /* NSURLConnection+SelfSigned.m in Sources */,
+				0678097F1C5B128900FB147A /* ASValueTrackingSlider.m in Sources */,
 				062C678B1C589AF400B9C134 /* UIScrollView+Pages.m in Sources */,
 				062C67C81C589E4600B9C134 /* GVUserDefaults.m in Sources */,
 				062C64BF1C5892DD00B9C134 /* ZJBaseViewController.m in Sources */,
