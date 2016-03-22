@@ -172,12 +172,12 @@
     fixedSpaceItem.width = 25;
     
     UIBarButtonItem *lefttem=[[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(remove)];
-    lefttem.tintColor = JYDColor(0, 131, 216);
+    lefttem.tintColor =ZJColor(0, 131, 216);
     
     UIBarButtonItem *centerSpace=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
     UIBarButtonItem *right=[[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(doneClick)];
-    right.tintColor   = JYDColor(0, 131, 216);
+    right.tintColor   = ZJColor(0, 131, 216);
     
     toolbar.items=@[fixedSpaceItem, lefttem, centerSpace, right, fixedSpaceItem];
     

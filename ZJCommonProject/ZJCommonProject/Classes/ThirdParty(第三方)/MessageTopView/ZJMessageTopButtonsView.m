@@ -7,6 +7,7 @@
 //
 
 #import "ZJMessageTopButtonsView.h"
+#import "UIImage+Color.h"
 
 @implementation ZJMessageTopButtonsView
 
@@ -20,7 +21,7 @@
             
             _giveLineView = [[UIImageView alloc] init];
             //_giveLineView.image = [UIImage imageNamed:@"button_index_line"];
-            _giveLineView.image = [UIImage imageWithColor:JYDColorFromRGB(0x2CAFD7) size:CGSizeMake(App_Main_Screen_Width, 2)];
+            _giveLineView.image = [UIImage imageWithColor:ZJColorFromRGB(0x2CAFD7)];
             [self addSubview:_giveLineView];
         }
         
@@ -37,7 +38,7 @@
 
 -(void)layoutSubviews
 {
-    JYDLog(@"layoutSubviews");
+    ZJLog(@"layoutSubviews");
     
     if((_buttonArray.count > 0 && _createButtonArray.count == 0))
     {
@@ -46,7 +47,7 @@
             _button = [UIButton buttonWithType:UIButtonTypeCustom];
             [_button setBackgroundImage:[UIImage imageNamed:@"message_top_button_bg"] forState:UIControlStateNormal];
             //[_button setBackgroundImage:[UIImage imageNamed:@"button_index_line"] forState:UIControlStateHighlighted];
-            [_button setBackgroundImage:[UIImage imageWithColor:JYDColorFromRGB(0x2CAFD7) size:CGSizeMake(App_Main_Screen_Width, 2)] forState:UIControlStateHighlighted];
+            [_button setBackgroundImage:[UIImage imageWithColor:ZJColorFromRGB(0x2CAFD7)] forState:UIControlStateHighlighted];
             [_button setTitle:[_buttonArray objectAtIndex:i] forState:UIControlStateNormal];
             _button.titleLabel.font = [UIFont systemFontOfSize:15];
             [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -96,11 +97,11 @@
             UIButton *button = [_createButtonArray objectAtIndex:i];
             if(i == buttonIndex)
             {
-                [button setTitleColor:JYDColorFromRGB(0x2CAFD7) forState:UIControlStateNormal];
+                [button setTitleColor:ZJColorFromRGB(0x2CAFD7) forState:UIControlStateNormal];
             }
             else
             {
-                [button setTitleColor:JYDColorFromRGB(0x727272) forState:UIControlStateNormal];
+                [button setTitleColor:ZJColorFromRGB(0x727272) forState:UIControlStateNormal];
             }
         }
         
