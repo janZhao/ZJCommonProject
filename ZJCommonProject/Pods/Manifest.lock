@@ -38,6 +38,7 @@ PODS:
   - Masonry (0.6.4)
   - MJExtension (2.5.16)
   - MJRefresh (2.3.2)
+  - RTLabel (1.0.1)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - Masonry (~> 0.6.2)
   - MJExtension (~> 2.5.3)
   - MJRefresh (~> 2.3.2)
+  - RTLabel (~> 1.0.1)
   - SDWebImage (~> 3.7.3)
   - YTKNetwork (~> 0.6.0)
 
@@ -70,6 +72,7 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
+  RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   YTKNetwork: 988660d5fab310a55895239751ecfa74c3224a77

@@ -18,6 +18,7 @@
 #import "YTKNetworkConfig.h"
 #import "YTKUrlArgumentsFilter.h"
 #import "MyCustomLogFormatter.h"
+#import "UIForLumberjack.h"
 
 @interface AppDelegate ()
 
@@ -28,35 +29,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //1.日志开启记录
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];   // TTY = Xcode console
-    //[DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    //1.设置日志相关
+    [self setupDDLog];
     
-    //1.1日志打印格式
-    MyCustomLogFormatter *formatter = [[MyCustomLogFormatter alloc]init];
-    [[DDTTYLogger sharedInstance] setLogFormatter:formatter];
-    
-    //1.2日志级别
-    [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:ddLogLevel];
-
-    //1.3 And we also enable colors
-    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-    
-    //1.3.1 Customize our colors.
-    #if TARGET_OS_IPHONE
-        UIColor *pink = [UIColor colorWithRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
-    #else
-        NSColor *pink = [NSColor colorWithCalibratedRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
-    #endif
-    
-    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:DDLogFlagInfo];
-     
-    //1.4记录文件日志
-    //DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
-    //fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
-    //fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
-    //[DDLog addLogger:fileLogger];
-
     //2、请求全局地址设置
     [self setupRequestConfig];
     
@@ -64,6 +39,41 @@
     //[self setupRequestFilters];
     
     return YES;
+}
+
+-(void)setupDDLog
+{
+    //1.1日志打印格式
+    MyCustomLogFormatter *formatter = [[MyCustomLogFormatter alloc]init];
+    [[DDTTYLogger sharedInstance] setLogFormatter:formatter];
+    
+    //1.2日志开启记录--日志级别
+    //[DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
+    //[DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:ddLogLevel];
+    
+    //1.2.1 日志UI界面查看添加<----->
+    [DDLog addLogger:[UIForLumberjack sharedInstance]];
+    //日志以界面形式展示
+    //[[UIForLumberjack sharedInstance] showLogInView:self.view];
+    
+    //1.3 And we also enable colors
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    
+    //1.3.1 Customize our colors.
+#if TARGET_OS_IPHONE
+    UIColor *pink = [UIColor colorWithRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
+#else
+    NSColor *pink = [NSColor colorWithCalibratedRed:(255/255.0) green:(58/255.0) blue:(159/255.0) alpha:1.0];
+#endif
+    
+    [[DDTTYLogger sharedInstance] setForegroundColor:pink backgroundColor:nil forFlag:DDLogFlagInfo];
+    
+    //1.4记录文件日志
+    //DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    //fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    //fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    //[DDLog addLogger:fileLogger];
 }
 
 - (void)setupRequestConfig
@@ -87,20 +97,24 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
+- (void)applicationWillTerminate:(UIApplication *)application
+{
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
@@ -112,14 +126,17 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (NSURL *)applicationDocumentsDirectory {
+- (NSURL *)applicationDocumentsDirectory
+{
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.jyd.ZJCommonProject" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-- (NSManagedObjectModel *)managedObjectModel {
+- (NSManagedObjectModel *)managedObjectModel
+{
     // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
-    if (_managedObjectModel != nil) {
+    if (_managedObjectModel != nil)
+    {
         return _managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ZJCommonProject" withExtension:@"momd"];
@@ -127,7 +144,8 @@
     return _managedObjectModel;
 }
 
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
     // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it.
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;

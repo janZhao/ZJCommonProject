@@ -69,9 +69,7 @@
 
 - (void)requestFinished:(YTKBaseRequest *)request
 {
-    NSLog(@"succeed");
-    
-    DDLogVerbose(@"----%@", request.responseJSONObject);
+    DDLogVerbose(@"succeed GetUserInfoApi");
 }
 
 - (void)requestFailed:(YTKBaseRequest *)request

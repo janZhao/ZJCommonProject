@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060A333D1CA3B8C400CFEA92 /* UIForLumberjack.m in Sources */ = {isa = PBXBuildFile; fileRef = 060A333C1CA3B8C400CFEA92 /* UIForLumberjack.m */; };
 		062C645D1C586BF100B9C134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C645C1C586BF100B9C134 /* main.m */; };
 		062C64601C586BF100B9C134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C645F1C586BF100B9C134 /* AppDelegate.m */; };
 		062C64631C586BF100B9C134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C64621C586BF100B9C134 /* ViewController.m */; };
@@ -297,6 +298,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060A333B1CA3B8C400CFEA92 /* UIForLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIForLumberjack.h; sourceTree = "<group>"; };
+		060A333C1CA3B8C400CFEA92 /* UIForLumberjack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIForLumberjack.m; sourceTree = "<group>"; };
 		062C64581C586BF100B9C134 /* ZJCommonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJCommonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062C645C1C586BF100B9C134 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		062C645E1C586BF100B9C134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -864,6 +867,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060A33391CA3B8C400CFEA92 /* UIForLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				060A333B1CA3B8C400CFEA92 /* UIForLumberjack.h */,
+				060A333C1CA3B8C400CFEA92 /* UIForLumberjack.m */,
+			);
+			path = UIForLumberjack;
+			sourceTree = "<group>";
+		};
 		062C644F1C586BF100B9C134 = {
 			isa = PBXGroup;
 			children = (
@@ -1102,6 +1114,7 @@
 			children = (
 				063FACD91C7ECF8C003B5874 /* MyCustomLogFormatter.h */,
 				063FACDA1C7ECF8C003B5874 /* MyCustomLogFormatter.m */,
+				060A33391CA3B8C400CFEA92 /* UIForLumberjack */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2792,6 +2805,7 @@
 				062C67C21C589AF400B9C134 /* WebView+Debug.m in Sources */,
 				062C67951C589AF400B9C134 /* UITextField+Blocks.m in Sources */,
 				062C67051C589AF400B9C134 /* NSIndexPath+Offset.m in Sources */,
+				060A333D1CA3B8C400CFEA92 /* UIForLumberjack.m in Sources */,
 				062C67561C589AF400B9C134 /* UIColor+Random.m in Sources */,
 				062C674C1C589AF400B9C134 /* UIButton+BackgroundColor.m in Sources */,
 				062C67A91C589AF400B9C134 /* UIView+Screenshot.m in Sources */,

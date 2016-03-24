@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZJTabBar.h"
 
 @interface ZJTabBarViewController : UITabBarController
+
+@property (nonatomic, strong) ZJTabBar *customTabBar;
+
+//传参需要
+@property (assign, nonatomic) NSInteger selectedAtIndexParam;
 
 @end

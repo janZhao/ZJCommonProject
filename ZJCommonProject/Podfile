@@ -8,4 +8,4 @@ pod 'FMDB/common' , '~>2.5'
 pod 'FMDB/SQLCipher', '~>2.5'
 pod 'CocoaLumberjack', '~> 2.0.0-rc'
 pod 'YTKNetwork', '~> 0.6.0'
-
+pod 'RTLabel', '~> 1.0.1'
