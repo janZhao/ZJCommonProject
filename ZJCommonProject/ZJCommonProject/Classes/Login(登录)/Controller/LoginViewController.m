@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "GetUserInfoApi.h"
+#import "ZJTabBarViewController.h"
 
 @interface LoginViewController ()<YTKRequestDelegate>
 
@@ -70,11 +71,15 @@
 - (void)requestFinished:(YTKBaseRequest *)request
 {
     DDLogVerbose(@"succeed GetUserInfoApi");
+    
+    //登录成功后跳转到主界面
+    ZJTabBarViewController *rootVc = [[ZJTabBarViewController alloc]init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = rootVc;
 }
 
 - (void)requestFailed:(YTKBaseRequest *)request
 {
-    NSLog(@"failed");
+    DDLogError(@"failed");
 }
 
 @end

@@ -75,9 +75,6 @@
                                 <state key="normal" image="wechatLogin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="AuthWithWeChat:" destination="3V2-x2-46a" eventType="touchUpInside" id="wWb-s4-yP8"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他账号登录:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtP-iw-JgI" userLabel="WeChatQQLogin Tips Lbl">
                                 <rect key="frame" x="30" y="274" width="150" height="35"/>
@@ -98,9 +95,6 @@
                                 <state key="normal" image="qqLogin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="AuthWithQQSpce:" destination="3V2-x2-46a" eventType="touchUpInside" id="2F0-KO-AdT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

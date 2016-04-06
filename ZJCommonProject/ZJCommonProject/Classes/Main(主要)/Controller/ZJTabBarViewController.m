@@ -8,6 +8,7 @@
 
 #import "ZJTabBarViewController.h"
 #import "ZJNavigationController.h"
+#import "ZJSettingViewController.h"
 
 @interface ZJTabBarViewController ()<ZJTabBarDelegete>
 
@@ -68,19 +69,19 @@
 {
     // 1.
     UIViewController *firstVc = [[UIViewController alloc]init];
-    [self setupChildViewController:firstVc title:@"First" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self setupChildViewController:firstVc title:@"微信" imageName:@"tabbar_mainframe" selectedImageName:@"tabbar_mainframeHL"];
     
     // 2.
     UIViewController *secondVc = [[UIViewController alloc]init];
-    [self setupChildViewController:secondVc title:@"Second" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self setupChildViewController:secondVc title:@"通讯录" imageName:@"tabbar_contacts" selectedImageName:@"tabbar_contactsHL"];
     
     // 3.
     UIViewController *thirdVc = [[UIViewController alloc]init];
-    [self setupChildViewController:thirdVc title:@"Third" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    [self setupChildViewController:thirdVc title:@"发现" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discoverHL"];
     
     // 4.
-    UIViewController *fourVc = [[UIViewController alloc]init];
-    [self setupChildViewController:fourVc title:@"Four" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    ZJSettingViewController *fourVc = [[ZJSettingViewController alloc]init];
+    [self setupChildViewController:fourVc title:@"我" imageName:@"tabbar_me" selectedImageName:@"tabbar_meHL"];
 }
 
 

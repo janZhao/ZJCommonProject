@@ -9,7 +9,7 @@
 #import "ZJTabBarButton.h"
 #import "ZJBadgeButton.h"
 
-#define ZJImageRatio 1.0
+#define ZJImageRatio 0.6
 
 @interface ZJTabBarButton()
 
@@ -26,10 +26,10 @@
     if (self) {
         //设置一些初始化状态
         self.imageView.contentMode    = UIViewContentModeCenter;
-        //self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        //self.titleLabel.font = [UIFont systemFontOfSize:13];
-        //[self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        //[self setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.font = [UIFont systemFontOfSize:13];
+        [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
         
         //添加自定义的badgeButton
         [self setupBadgeButton];
@@ -60,8 +60,7 @@
     CGFloat imageX = 0;
     CGFloat imageY = 0;
     CGFloat imageW = contentRect.size.width;
-    //CGFloat imageH = contentRect.size.height * ZJImageRatio;
-    CGFloat imageH = contentRect.size.height;
+    CGFloat imageH = contentRect.size.height * ZJImageRatio;
     
     return CGRectMake(imageX, imageY, imageW, imageH);
 }
@@ -72,13 +71,12 @@
  */
 -(CGRect)titleRectForContentRect:(CGRect)contentRect
 {
-    //CGFloat titleX = 0;
-    //CGFloat titleY = contentRect.size.height * ZJImageRatio;
-    //CGFloat titleW = contentRect.size.width;
-    //CGFloat titleH = contentRect.size.height - titleY;
+    CGFloat titleX = 0;
+    CGFloat titleY = contentRect.size.height * ZJImageRatio;
+    CGFloat titleW = contentRect.size.width;
+    CGFloat titleH = contentRect.size.height - titleY;
 
-    //return CGRectMake(titleX, titleY, titleW, titleH);
-    return CGRectZero;
+    return CGRectMake(titleX, titleY, titleW, titleH);
 }
 
 -(void)setItem:(UITabBarItem *)item

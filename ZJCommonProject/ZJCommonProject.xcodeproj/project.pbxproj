@@ -262,6 +262,11 @@
 		063FACD61C7EA182003B5874 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FACD51C7EA182003B5874 /* MapKit.framework */; };
 		063FACD81C7EA190003B5874 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FACD71C7EA190003B5874 /* QuartzCore.framework */; };
 		063FACDB1C7ECF8C003B5874 /* MyCustomLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FACDA1C7ECF8C003B5874 /* MyCustomLogFormatter.m */; };
+		064D65CA1CAE72E900637B26 /* ZJBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D65C91CAE72E900637B26 /* ZJBaseSettingViewController.m */; };
+		064D65CD1CAE732C00637B26 /* ZJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D65CC1CAE732C00637B26 /* ZJSettingViewController.m */; };
+		064D65D01CAE73FF00637B26 /* ZJSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D65CF1CAE73FF00637B26 /* ZJSettingGroup.m */; };
+		064D65D31CAE744E00637B26 /* ZJSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D65D21CAE744E00637B26 /* ZJSettingItem.m */; };
+		064D65D61CAE764A00637B26 /* ZJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D65D51CAE764900637B26 /* ZJSettingCell.m */; };
 		0678095F1C5A0D1600FB147A /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678095C1C5A0D1600FB147A /* DateUtils.m */; };
 		067809631C5A0DFC00FB147A /* IPDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809621C5A0DFC00FB147A /* IPDetector.m */; };
 		0678096A1C5A176200FB147A /* DXPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809661C5A176200FB147A /* DXPopover.m */; };
@@ -800,6 +805,16 @@
 		063FACD71C7EA190003B5874 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		063FACD91C7ECF8C003B5874 /* MyCustomLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomLogFormatter.h; sourceTree = "<group>"; };
 		063FACDA1C7ECF8C003B5874 /* MyCustomLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomLogFormatter.m; sourceTree = "<group>"; };
+		064D65C81CAE72E900637B26 /* ZJBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBaseSettingViewController.h; sourceTree = "<group>"; };
+		064D65C91CAE72E900637B26 /* ZJBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBaseSettingViewController.m; sourceTree = "<group>"; };
+		064D65CB1CAE732C00637B26 /* ZJSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSettingViewController.h; sourceTree = "<group>"; };
+		064D65CC1CAE732C00637B26 /* ZJSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSettingViewController.m; sourceTree = "<group>"; };
+		064D65CE1CAE73FF00637B26 /* ZJSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSettingGroup.h; sourceTree = "<group>"; };
+		064D65CF1CAE73FF00637B26 /* ZJSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSettingGroup.m; sourceTree = "<group>"; };
+		064D65D11CAE744E00637B26 /* ZJSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSettingItem.h; sourceTree = "<group>"; };
+		064D65D21CAE744E00637B26 /* ZJSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSettingItem.m; sourceTree = "<group>"; };
+		064D65D41CAE764900637B26 /* ZJSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSettingCell.h; sourceTree = "<group>"; };
+		064D65D51CAE764900637B26 /* ZJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSettingCell.m; sourceTree = "<group>"; };
 		067809591C5A08C800FB147A /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		0678095A1C5A08C800FB147A /* ThirdMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdMacros.h; sourceTree = "<group>"; };
 		0678095B1C5A0D1600FB147A /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
@@ -1145,6 +1160,10 @@
 		062C64A81C58900A00B9C134 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				064D65C81CAE72E900637B26 /* ZJBaseSettingViewController.h */,
+				064D65C91CAE72E900637B26 /* ZJBaseSettingViewController.m */,
+				064D65CB1CAE732C00637B26 /* ZJSettingViewController.h */,
+				064D65CC1CAE732C00637B26 /* ZJSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1152,6 +1171,10 @@
 		062C64A91C58900A00B9C134 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				064D65CE1CAE73FF00637B26 /* ZJSettingGroup.h */,
+				064D65CF1CAE73FF00637B26 /* ZJSettingGroup.m */,
+				064D65D11CAE744E00637B26 /* ZJSettingItem.h */,
+				064D65D21CAE744E00637B26 /* ZJSettingItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1159,6 +1182,8 @@
 		062C64AA1C58900A00B9C134 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				064D65D41CAE764900637B26 /* ZJSettingCell.h */,
+				064D65D51CAE764900637B26 /* ZJSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2652,6 +2677,7 @@
 				062C67891C589AF400B9C134 /* UIScrollView+APParallaxHeader.m in Sources */,
 				067809761C5A17D400FB147A /* UITableView+FDKeyedHeightCache.m in Sources */,
 				062C67B91C589AF400B9C134 /* UIWebView+Alert.m in Sources */,
+				064D65D01CAE73FF00637B26 /* ZJSettingGroup.m in Sources */,
 				062C67701C589AF400B9C134 /* UIImageView+BetterFace.m in Sources */,
 				062C66F21C589AF400B9C134 /* NSDate+CupertinoYankee.m in Sources */,
 				062C67411C589AF400B9C134 /* UIAlertView+Block.m in Sources */,
@@ -2750,6 +2776,7 @@
 				062C67261C589AF400B9C134 /* NSString+RemoveEmoji.m in Sources */,
 				062C67781C589AF400B9C134 /* UILabel+SuggestSize.m in Sources */,
 				062C67991C589AF400B9C134 /* UITextView+PinchZoom.m in Sources */,
+				064D65CD1CAE732C00637B26 /* ZJSettingViewController.m in Sources */,
 				062C672B1C589AF400B9C134 /* NSString+UrlEncode.m in Sources */,
 				062C66DE1C589AF400B9C134 /* NSFetchRequest+Extensions.m in Sources */,
 				062C66ED1C589AF400B9C134 /* NSData+Encrypt.m in Sources */,
@@ -2801,6 +2828,7 @@
 				062C67AA1C589AF400B9C134 /* UIView+Shake.m in Sources */,
 				062C67071C589AF400B9C134 /* NSInvocation+Block.m in Sources */,
 				0678096B1C5A176200FB147A /* ZJMessageTopButtonsView.m in Sources */,
+				064D65D31CAE744E00637B26 /* ZJSettingItem.m in Sources */,
 				062C67421C589AF400B9C134 /* UIApplication+ApplicationSize.m in Sources */,
 				062C67C21C589AF400B9C134 /* WebView+Debug.m in Sources */,
 				062C67951C589AF400B9C134 /* UITextField+Blocks.m in Sources */,
@@ -2825,9 +2853,11 @@
 				062C67641C589AF400B9C134 /* UIImage+Color.m in Sources */,
 				062C67031C589AF400B9C134 /* NSFileManager+Paths.m in Sources */,
 				062C67B51C589AF400B9C134 /* UIViewController+ScrollingStatusBar.m in Sources */,
+				064D65D61CAE764A00637B26 /* ZJSettingCell.m in Sources */,
 				062C67001C589AF400B9C134 /* NSDictionary+XML.m in Sources */,
 				062C67191C589AF400B9C134 /* NSRunLoop+PerformBlock.m in Sources */,
 				062C67101C589AF400B9C134 /* NSObject+AssociatedObject.m in Sources */,
+				064D65CA1CAE72E900637B26 /* ZJBaseSettingViewController.m in Sources */,
 				062C67BF1C589AF400B9C134 /* UIWebView+Style.m in Sources */,
 				062C67331C589AF400B9C134 /* NSMutableURLRequest+Upload.m in Sources */,
 				062C672C1C589AF400B9C134 /* NSString+UUID.m in Sources */,

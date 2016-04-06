@@ -54,7 +54,7 @@
     
     //1.2.1 日志UI界面查看添加<----->
     [DDLog addLogger:[UIForLumberjack sharedInstance]];
-    //日志以界面形式展示
+    //日志以界面形式展示----
     //[[UIForLumberjack sharedInstance] showLogInView:self.view];
     
     //1.3 And we also enable colors
