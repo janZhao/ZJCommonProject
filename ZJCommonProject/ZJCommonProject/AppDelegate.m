@@ -15,10 +15,9 @@
 //DDLog是强制性的，其余的都是可选的，这取决于你打算如何使用这个框架。例如，如果你不打算纪录到一个文件，你可以跳过DDFileLogger，或者你想跳过ASL以便更快的文件记录，你可以跳过DDASLLoger。
 
 #import "AppDelegate.h"
-#import "YTKNetworkConfig.h"
-#import "YTKUrlArgumentsFilter.h"
 #import "MyCustomLogFormatter.h"
 #import "UIForLumberjack.h"
+#import "ZJTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,14 +28,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //1.设置日志相关
+    // 1.设置日志相关
     [self setupDDLog];
     
-    //2、请求全局地址设置
-    [self setupRequestConfig];
-    
-    //3、请求统一加参数配置
-    //[self setupRequestFilters];
+    // 2.设置根控制器
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [UIViewController new];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[ZJTabBarViewController alloc]init];
     
     return YES;
 }
@@ -74,21 +74,6 @@
     //fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
     //fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
     //[DDLog addLogger:fileLogger];
-}
-
-- (void)setupRequestConfig
-{
-    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
-    config.baseUrl = @"http://www.wenba99.com";
-    config.cdnUrl = @"http://fen.bi";
-}
-
-- (void)setupRequestFilters
-{
-    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    YTKNetworkConfig *config = [YTKNetworkConfig sharedInstance];
-    YTKUrlArgumentsFilter *urlFilter = [YTKUrlArgumentsFilter filterWithArguments:@{@"version": appVersion}];
-    [config addUrlFilter:urlFilter];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

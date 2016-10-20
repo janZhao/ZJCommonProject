@@ -5,7 +5,7 @@
 //  Created by jyd on 16/1/27.
 //  Copyright © 2016年 jyd. All rights reserved.
 //
-
+//  自定义宏
 
 //中文字体
 #define CHINESE_FONT_NAME  @"Heiti SC"
@@ -39,6 +39,11 @@
 #define isIOS6                  ([[[UIDevice currentDevice]systemVersion]floatValue] < 7.0)
 //
 #define isIOS8                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=8.0)
+
+#define isIOS9                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=9.0)
+
+#define isIOS10                 ([[[UIDevice currentDevice]systemVersion]floatValue] >=10.0)
+
 // 是否iPad
 #define isPad                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 

@@ -37,7 +37,7 @@
 + (NSString *)intervalSinceNow: (NSString *) theDate;
 
 /**
- * 计算最新消息的时间 /// 原徒步APP代码
+ * 计算最新消息的时间
  */
 + (NSString *)getMessageTime:(NSString *)strTime;
 

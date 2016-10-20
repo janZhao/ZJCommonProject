@@ -5,6 +5,7 @@
 //  Created by jyd on 16/1/27.
 //  Copyright © 2016年 jyd. All rights reserved.
 //  第三方Key的使用
+//  第三方宏
 
 #ifndef ThirdMacros_h
 #define ThirdMacros_h

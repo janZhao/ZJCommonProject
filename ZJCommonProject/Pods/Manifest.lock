@@ -1,26 +1,18 @@
 PODS:
-  - AFDownloadRequestOperation (2.0.1):
-    - AFNetworking (~> 2.0)
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
@@ -30,14 +22,17 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
+  - FLAnimatedImage (1.0.12)
   - FMDB/common (2.5)
   - FMDB/SQLCipher (2.5):
     - FMDB/common
     - SQLCipher
   - JSONModel (1.0.2)
+  - LGAlertView (2.0.13)
   - Masonry (0.6.4)
-  - MJExtension (2.5.16)
+  - MJExtension (3.0.10)
   - MJRefresh (2.3.2)
+  - mp3lame-for-ios (0.1.1)
   - RTLabel (1.0.1)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
@@ -47,34 +42,37 @@ PODS:
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
-  - YTKNetwork (0.6.0):
-    - AFDownloadRequestOperation (~> 2.0)
-    - AFNetworking (~> 2.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.0.4)
   - CocoaLumberjack (~> 2.0.0-rc)
+  - FLAnimatedImage (~> 1.0)
   - FMDB/common (~> 2.5)
   - FMDB/SQLCipher (~> 2.5)
   - JSONModel (~> 1.0.1)
+  - LGAlertView (~> 2.0.13)
   - Masonry (~> 0.6.2)
-  - MJExtension (~> 2.5.3)
+  - MJExtension (~> 3.0.10)
   - MJRefresh (~> 2.3.2)
+  - mp3lame-for-ios (~> 0.1.1)
   - RTLabel (~> 1.0.1)
   - SDWebImage (~> 3.7.3)
-  - YTKNetwork (~> 0.6.0)
 
 SPEC CHECKSUMS:
-  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
+  LGAlertView: 9a5dcbf4f81b02b718083539d7f222280adc9547
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
+  mp3lame-for-ios: 4daeb5686885be66438154050e3fe975d4ee1f07
   RTLabel: 6005d07fef57b101097c4271f804daae3110cbca
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
-  YTKNetwork: 988660d5fab310a55895239751ecfa74c3224a77
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 948f889c1e092c9943268627f9171f852b103fa5
+
+COCOAPODS: 1.0.0

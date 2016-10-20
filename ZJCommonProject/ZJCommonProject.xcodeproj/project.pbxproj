@@ -115,7 +115,6 @@
 		062C67371C589AF400B9C134 /* MKMapView+BetterMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C659F1C589AF400B9C134 /* MKMapView+BetterMaps.m */; };
 		062C67381C589AF400B9C134 /* MKMapView+MoveLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65A11C589AF400B9C134 /* MKMapView+MoveLogo.m */; };
 		062C67391C589AF400B9C134 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65A31C589AF400B9C134 /* MKMapView+ZoomLevel.m */; };
-		062C673A1C589AF400B9C134 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65A61C589AF400B9C134 /* GVUserDefaults+BBProperties.m */; };
 		062C673B1C589AF400B9C134 /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65AA1C589AF400B9C134 /* CAAnimation+Blocks.m */; };
 		062C673C1C589AF400B9C134 /* CAAnimation+EasingEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65AC1C589AF400B9C134 /* CAAnimation+EasingEquations.m */; };
 		062C673D1C589AF400B9C134 /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C65AF1C589AF400B9C134 /* CALayer+UIColor.m */; };
@@ -254,7 +253,6 @@
 		062C67D11C58A0F400B9C134 /* ZJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67D01C58A0F400B9C134 /* ZJTabBar.m */; };
 		062C67D41C58A11900B9C134 /* ZJTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67D31C58A11900B9C134 /* ZJTabBarButton.m */; };
 		062C67D71C58A13500B9C134 /* ZJBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67D61C58A13500B9C134 /* ZJBadgeButton.m */; };
-		062C67DE1C58C46000B9C134 /* PAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67DA1C58C46000B9C134 /* PAImageView.m */; };
 		062C67DF1C58C46000B9C134 /* ZHPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062C67DD1C58C46000B9C134 /* ZHPickView.m */; };
 		063FACD01C7EA15F003B5874 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FACCF1C7EA15F003B5874 /* libz.tbd */; };
 		063FACD21C7EA16F003B5874 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FACD11C7EA16F003B5874 /* CoreData.framework */; };
@@ -277,12 +275,7 @@
 		067809781C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 067809741C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		0678097E1C5B128900FB147A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678097B1C5B128900FB147A /* ASValuePopUpView.m */; };
 		0678097F1C5B128900FB147A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0678097D1C5B128900FB147A /* ASValueTrackingSlider.m */; };
-		068859701C7AD862007D3A53 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0688596F1C7AD862007D3A53 /* LoginViewController.m */; };
-		068859761C7AE51D007D3A53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068859751C7AE51D007D3A53 /* Login.storyboard */; };
-		0688597B1C7AF7D2007D3A53 /* RegisterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0688597A1C7AF7D2007D3A53 /* RegisterApi.m */; };
-		0688597E1C7AFF1A007D3A53 /* GetUserInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0688597D1C7AFF1A007D3A53 /* GetUserInfoApi.m */; };
-		0688598B1C7B098A007D3A53 /* YTKUrlArgumentsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0688598A1C7B098A007D3A53 /* YTKUrlArgumentsFilter.m */; };
-		E3457F47661D824AF03DFC73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D429E7A1871E48A4F25A2F0C /* libPods.a */; };
+		A7F644E2A9D1132E2934D902 /* libPods-ZJCommonProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC2DFC9EB8FA2F53642D37 /* libPods-ZJCommonProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +296,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05FB21E1F949AA62AAFEE3BE /* Pods-ZJCommonProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJCommonProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJCommonProject/Pods-ZJCommonProject.debug.xcconfig"; sourceTree = "<group>"; };
 		060A333B1CA3B8C400CFEA92 /* UIForLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIForLumberjack.h; sourceTree = "<group>"; };
 		060A333C1CA3B8C400CFEA92 /* UIForLumberjack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIForLumberjack.m; sourceTree = "<group>"; };
 		062C64581C586BF100B9C134 /* ZJCommonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJCommonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -515,8 +509,6 @@
 		062C65A11C589AF400B9C134 /* MKMapView+MoveLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+MoveLogo.m"; sourceTree = "<group>"; };
 		062C65A21C589AF400B9C134 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		062C65A31C589AF400B9C134 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-		062C65A51C589AF400B9C134 /* GVUserDefaults+BBProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+BBProperties.h"; sourceTree = "<group>"; };
-		062C65A61C589AF400B9C134 /* GVUserDefaults+BBProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+BBProperties.m"; sourceTree = "<group>"; };
 		062C65A91C589AF400B9C134 /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
 		062C65AA1C589AF400B9C134 /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
 		062C65AB1C589AF400B9C134 /* CAAnimation+EasingEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+EasingEquations.h"; sourceTree = "<group>"; };
@@ -794,8 +786,6 @@
 		062C67D31C58A11900B9C134 /* ZJTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTabBarButton.m; sourceTree = "<group>"; };
 		062C67D51C58A13500B9C134 /* ZJBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBadgeButton.h; sourceTree = "<group>"; };
 		062C67D61C58A13500B9C134 /* ZJBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBadgeButton.m; sourceTree = "<group>"; };
-		062C67D91C58C46000B9C134 /* PAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAImageView.h; sourceTree = "<group>"; };
-		062C67DA1C58C46000B9C134 /* PAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAImageView.m; sourceTree = "<group>"; };
 		062C67DC1C58C46000B9C134 /* ZHPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPickView.h; sourceTree = "<group>"; };
 		062C67DD1C58C46000B9C134 /* ZHPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPickView.m; sourceTree = "<group>"; };
 		063FACCF1C7EA15F003B5874 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -837,18 +827,8 @@
 		0678097B1C5B128900FB147A /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
 		0678097C1C5B128900FB147A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
 		0678097D1C5B128900FB147A /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
-		0688596E1C7AD862007D3A53 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		0688596F1C7AD862007D3A53 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		068859751C7AE51D007D3A53 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		068859791C7AF7D2007D3A53 /* RegisterApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterApi.h; sourceTree = "<group>"; };
-		0688597A1C7AF7D2007D3A53 /* RegisterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterApi.m; sourceTree = "<group>"; };
-		0688597C1C7AFF1A007D3A53 /* GetUserInfoApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUserInfoApi.h; sourceTree = "<group>"; };
-		0688597D1C7AFF1A007D3A53 /* GetUserInfoApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUserInfoApi.m; sourceTree = "<group>"; };
-		068859891C7B098A007D3A53 /* YTKUrlArgumentsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKUrlArgumentsFilter.h; sourceTree = "<group>"; };
-		0688598A1C7B098A007D3A53 /* YTKUrlArgumentsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKUrlArgumentsFilter.m; sourceTree = "<group>"; };
-		0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		8F304A3C52914685600B7B1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D429E7A1871E48A4F25A2F0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AC2DFC9EB8FA2F53642D37 /* libPods-ZJCommonProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJCommonProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C8D83AEF2EE117966A9CAD /* Pods-ZJCommonProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJCommonProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJCommonProject/Pods-ZJCommonProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -861,7 +841,7 @@
 				063FACD41C7EA178003B5874 /* CoreLocation.framework in Frameworks */,
 				063FACD21C7EA16F003B5874 /* CoreData.framework in Frameworks */,
 				063FACD01C7EA15F003B5874 /* libz.tbd in Frameworks */,
-				E3457F47661D824AF03DFC73 /* libPods.a in Frameworks */,
+				A7F644E2A9D1132E2934D902 /* libPods-ZJCommonProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,8 +878,8 @@
 				062C64771C586BF100B9C134 /* ZJCommonProjectTests */,
 				062C64821C586BF100B9C134 /* ZJCommonProjectUITests */,
 				062C64591C586BF100B9C134 /* Products */,
-				8C0B86839696FEFD70397E5A /* Pods */,
 				90AE6357BE2AA96BC9E2BA3C /* Frameworks */,
+				BF008B497387A9EDECEFE0FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1068,9 +1048,6 @@
 		062C649D1C58900A00B9C134 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0688596E1C7AD862007D3A53 /* LoginViewController.h */,
-				0688596F1C7AD862007D3A53 /* LoginViewController.m */,
-				068859751C7AE51D007D3A53 /* Login.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1250,7 +1227,6 @@
 				0678096C1C5A17D400FB147A /* FDTemplateLayoutCell */,
 				067809641C5A176200FB147A /* DXPopover */,
 				067809671C5A176200FB147A /* MessageTopView */,
-				062C67D81C58C46000B9C134 /* PAImageView */,
 				062C67DB1C58C46000B9C134 /* ZHPickView */,
 				062C67C51C589E4600B9C134 /* GVUserDefaults */,
 				062C64C31C5899F400B9C134 /* MBProgressHUD */,
@@ -1748,8 +1724,6 @@
 		062C65A41C589AF400B9C134 /* Other(个人分类) */ = {
 			isa = PBXGroup;
 			children = (
-				062C65A51C589AF400B9C134 /* GVUserDefaults+BBProperties.h */,
-				062C65A61C589AF400B9C134 /* GVUserDefaults+BBProperties.m */,
 			);
 			name = "Other(个人分类)";
 			path = Other;
@@ -2314,15 +2288,6 @@
 			path = GVUserDefaults;
 			sourceTree = "<group>";
 		};
-		062C67D81C58C46000B9C134 /* PAImageView */ = {
-			isa = PBXGroup;
-			children = (
-				062C67D91C58C46000B9C134 /* PAImageView.h */,
-				062C67DA1C58C46000B9C134 /* PAImageView.m */,
-			);
-			path = PAImageView;
-			sourceTree = "<group>";
-		};
 		062C67DB1C58C46000B9C134 /* ZHPickView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2388,10 +2353,6 @@
 		068859781C7AF75A007D3A53 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				068859791C7AF7D2007D3A53 /* RegisterApi.h */,
-				0688597A1C7AF7D2007D3A53 /* RegisterApi.m */,
-				0688597C1C7AFF1A007D3A53 /* GetUserInfoApi.h */,
-				0688597D1C7AFF1A007D3A53 /* GetUserInfoApi.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -2399,19 +2360,8 @@
 		068859881C7B096D007D3A53 /* BaseBusiness */ = {
 			isa = PBXGroup;
 			children = (
-				068859891C7B098A007D3A53 /* YTKUrlArgumentsFilter.h */,
-				0688598A1C7B098A007D3A53 /* YTKUrlArgumentsFilter.m */,
 			);
 			path = BaseBusiness;
-			sourceTree = "<group>";
-		};
-		8C0B86839696FEFD70397E5A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */,
-				8F304A3C52914685600B7B1E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		90AE6357BE2AA96BC9E2BA3C /* Frameworks */ = {
@@ -2422,9 +2372,18 @@
 				063FACD31C7EA178003B5874 /* CoreLocation.framework */,
 				063FACD11C7EA16F003B5874 /* CoreData.framework */,
 				063FACCF1C7EA15F003B5874 /* libz.tbd */,
-				D429E7A1871E48A4F25A2F0C /* libPods.a */,
+				50AC2DFC9EB8FA2F53642D37 /* libPods-ZJCommonProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF008B497387A9EDECEFE0FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05FB21E1F949AA62AAFEE3BE /* Pods-ZJCommonProject.debug.xcconfig */,
+				72C8D83AEF2EE117966A9CAD /* Pods-ZJCommonProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2434,12 +2393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 062C64881C586BF100B9C134 /* Build configuration list for PBXNativeTarget "ZJCommonProject" */;
 			buildPhases = (
-				7AC9A4004889C7AAAFB83B86 /* Check Pods Manifest.lock */,
+				B3CBE402DFA8D04FB9CEFC97 /* 📦 Check Pods Manifest.lock */,
 				062C64541C586BF100B9C134 /* Sources */,
 				062C64551C586BF100B9C134 /* Frameworks */,
 				062C64561C586BF100B9C134 /* Resources */,
-				DF129A52351B911EAE69441B /* Embed Pods Frameworks */,
-				FA9B79CF0D00EB99DE980DD5 /* Copy Pods Resources */,
+				3A19650BDF6C4C656A2DB678 /* 📦 Embed Pods Frameworks */,
+				30E6ACD13AD571D4B785F585 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2497,6 +2456,7 @@
 				TargetAttributes = {
 					062C64571C586BF100B9C134 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CH93287579;
 					};
 					062C64731C586BF100B9C134 = {
 						CreatedOnToolsVersion = 7.2;
@@ -2535,7 +2495,6 @@
 			files = (
 				062C646E1C586BF100B9C134 /* LaunchScreen.storyboard in Resources */,
 				062C66F91C589AF400B9C134 /* NSDateTimeAgo.bundle in Resources */,
-				068859761C7AE51D007D3A53 /* Login.storyboard in Resources */,
 				062C646B1C586BF100B9C134 /* Assets.xcassets in Resources */,
 				062C64C81C5899F400B9C134 /* LICENSE in Resources */,
 				062C64661C586BF100B9C134 /* Main.storyboard in Resources */,
@@ -2559,49 +2518,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7AC9A4004889C7AAAFB83B86 /* Check Pods Manifest.lock */ = {
+		30E6ACD13AD571D4B785F585 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJCommonProject/Pods-ZJCommonProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A19650BDF6C4C656A2DB678 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJCommonProject/Pods-ZJCommonProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CBE402DFA8D04FB9CEFC97 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DF129A52351B911EAE69441B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA9B79CF0D00EB99DE980DD5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2718,11 +2677,9 @@
 				062C67BC1C589AF400B9C134 /* UIWebView+JS.m in Sources */,
 				062C678C1C589AF400B9C134 /* UISearchBar+Blocks.m in Sources */,
 				062C67371C589AF400B9C134 /* MKMapView+BetterMaps.m in Sources */,
-				0688598B1C7B098A007D3A53 /* YTKUrlArgumentsFilter.m in Sources */,
 				062C674F1C589AF400B9C134 /* UIButton+Indicator.m in Sources */,
 				062C67441C589AF400B9C134 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				062C67751C589AF400B9C134 /* UILabel+AutomaticWriting.m in Sources */,
-				0688597B1C7AF7D2007D3A53 /* RegisterApi.m in Sources */,
 				062C66DF1C589AF400B9C134 /* NSManagedObject+DictionaryExport.m in Sources */,
 				0678097E1C5B128900FB147A /* ASValuePopUpView.m in Sources */,
 				062C676E1C589AF400B9C134 /* UIImage+Vector.m in Sources */,
@@ -2758,7 +2715,6 @@
 				062C67461C589AF400B9C134 /* UIBarButtonItem+Action.m in Sources */,
 				062C67B31C589AF400B9C134 /* UIViewController+MJPopupViewController.m in Sources */,
 				062C67A51C589AF400B9C134 /* UIView+GestureCallback.m in Sources */,
-				0688597E1C7AFF1A007D3A53 /* GetUserInfoApi.m in Sources */,
 				062C67861C589AF400B9C134 /* UIResponder+UIAdapt.m in Sources */,
 				062C67611C589AF400B9C134 /* UIImage+BetterFace.m in Sources */,
 				062C66E81C589AF400B9C134 /* NSArray+Block.m in Sources */,
@@ -2792,7 +2748,6 @@
 				062C64601C586BF100B9C134 /* AppDelegate.m in Sources */,
 				062C67B01C589AF400B9C134 /* UIViewController+BackButtonTouched.m in Sources */,
 				062C66EF1C589AF400B9C134 /* NSData+Hash.m in Sources */,
-				062C67DE1C58C46000B9C134 /* PAImageView.m in Sources */,
 				062C67551C589AF400B9C134 /* UIColor+Modify.m in Sources */,
 				062C67181C589AF400B9C134 /* NSObject+Runtime.m in Sources */,
 				062C67CE1C589FFE00B9C134 /* ZJNavigationController.m in Sources */,
@@ -2800,13 +2755,11 @@
 				062C67DF1C58C46000B9C134 /* ZHPickView.m in Sources */,
 				062C67711C589AF400B9C134 /* UIImageView+FaceAwareFill.m in Sources */,
 				062C67321C589AF400B9C134 /* NSURLConnection+SelfSigned.m in Sources */,
-				068859701C7AD862007D3A53 /* LoginViewController.m in Sources */,
 				0678097F1C5B128900FB147A /* ASValueTrackingSlider.m in Sources */,
 				062C678B1C589AF400B9C134 /* UIScrollView+Pages.m in Sources */,
 				062C67C81C589E4600B9C134 /* GVUserDefaults.m in Sources */,
 				062C64BF1C5892DD00B9C134 /* ZJBaseViewController.m in Sources */,
 				067809781C5A17D400FB147A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
-				062C673A1C589AF400B9C134 /* GVUserDefaults+BBProperties.m in Sources */,
 				062C67BD1C589AF400B9C134 /* UIWebView+Load.m in Sources */,
 				062C67061C589AF400B9C134 /* NSInvocation+Bb.m in Sources */,
 				063FACDB1C7ECF8C003B5874 /* MyCustomLogFormatter.m in Sources */,
@@ -3009,13 +2962,14 @@
 		};
 		062C64891C586BF100B9C134 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CEA7C1548AA6B484396B42B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 05FB21E1F949AA62AAFEE3BE /* Pods-ZJCommonProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CH93287579;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJCommonProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.ZJCommonProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3024,13 +2978,14 @@
 		};
 		062C648A1C586BF100B9C134 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F304A3C52914685600B7B1E /* Pods.release.xcconfig */;
+			baseConfigurationReference = 72C8D83AEF2EE117966A9CAD /* Pods-ZJCommonProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CH93287579;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJCommonProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.ZJCommonProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

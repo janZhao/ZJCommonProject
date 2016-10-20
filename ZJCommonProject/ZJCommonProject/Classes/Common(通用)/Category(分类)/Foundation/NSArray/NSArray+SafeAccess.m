@@ -9,12 +9,22 @@
 #import "NSArray+SafeAccess.h"
 
 @implementation NSArray (SafeAccess)
--(id)objectWithIndex:(NSUInteger)index{
-    if (index <self.count) {
-        return self[index];
-    }else{
+-(id)objectWithIndex:(NSUInteger)index
+{
+
+    if (index >= [self count])
+    {
         return nil;
     }
+    
+    id value = [self objectAtIndex:index];
+    
+    if (value == [NSNull null])
+    {
+        return nil;
+    }
+    
+    return value;
 }
 
 - (NSString*)stringWithIndex:(NSUInteger)index
